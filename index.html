@@ -4,36 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!--  font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind play cdn for this challenge ( for development and play purposes ) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
+
+  <!-- Alpine.js for menu  -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="bg-gray-light">
+ <header>
+   <nav>
+     <ul>
+       <li>Features</li>
+       <li>Company</li>
+       <li>Careers</li>
+       <li>About</li>
+     </ul>
+     <ul>
+       <li>Login</li>
+       <li>Register</li>
+     </ul>
+   </nav>
 
-  Features
-  Company
-  Careers
-  About
+ </header>
+ <main>
+   <h1 class="text-5xl text-gray-dark font-bold">
+     Make remote work
+   </h1>
 
-  Login
-  Register
+   <p class="text-lg text-gray-medium">
+     Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+   </p>
 
-  Make remote work
+   <button type="button" class="bg-gray-dark text-gray-light rounded-xl px-6 py-3">
+     Learn more
+   </button>
+ </main>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+ <footer class="relative">
+    <div class="text-xs text-gray-medium text-center">
+      Challenge by <a class="hover:underline hover:text-gray-dark transform ease-in-out duration-150" href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5" target="_blank">Frontend Mentor</a>.
+      Challenge by <a class="hover:underline hover:text-gray-dark transform ease-in-out duration-150" href="https://www.frontendmentor.io/profile/wendyhamel" target="_blank">Wendy Hamel</a>.
+    </div>
+ </footer>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
