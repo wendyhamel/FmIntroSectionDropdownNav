@@ -11,6 +11,10 @@ tailwind.config = {
             },
             boxShadow: {
                 'around': '0px 12px 50px -12px rgb(0 0 0 / 0.25)'
+            },
+            spacing: {
+                '2.25': '0.55rem',
+                '4.5': '1.1rem'
             }
         }
     }
